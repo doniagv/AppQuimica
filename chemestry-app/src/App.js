@@ -1,9 +1,11 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Example from "./components/chartEx";
-
 import { FaTemperatureLow } from "react-icons/fa";
 import { FaCloudscale } from "react-icons/fa";
 import Button from "./components/button";
+
+import Demo from "./components/barra";
 import "./App.css";
 
 function App() {
@@ -20,16 +22,7 @@ function App() {
           <div className="container">
             <h2>Temperatura/Presión</h2>
             <input type="text" />
-            <div className="progress progress-bar-vertical">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={{ height: "30%" }}
-              ></div>
-            </div>
+            <Demo />
           </div>
         </div>
         <div className="line-chart">
